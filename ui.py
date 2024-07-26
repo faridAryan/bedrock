@@ -3,21 +3,16 @@ import requests
 import base64
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
-from dotenv import load_dotenv
+
 import os
 
-# Load environment variables from .env file
-load_dotenv()
 
-DESCRIPTION_API_GATEWAY_URL = os.getenv("DESCRIPTION_API_GATEWAY_URL")
-HASHTAG_API_GATEWAY_URL = os.getenv("HASHTAG_API_GATEWAY_URL")
-ARTICLE_API_GATEWAY_URL = os.getenv("ARTICLE_API_GATEWAY_URL")
-GENERATE_IMAGE_API_GATEWAY_URL = os.getenv("GENERATE_IMAGE_API_GATEWAY_URL")
-QUERY_IMAGES_API_GATEWAY_URL = os.getenv("QUERY_IMAGES_API_GATEWAY_URL")
-BUCKET_NAME = os.getenv("BUCKET_NAME")
-
-MAX_PIXELS = 1048576  # Maximum allowed pixels
-
+DESCRIPTION_API_GATEWAY_URL="https://svp6nct490.execute-api.us-east-1.amazonaws.com/prod/generate-description"
+HASHTAG_API_GATEWAY_URL="https://svp6nct490.execute-api.us-east-1.amazonaws.com/prod/suggest-hashtags"
+ARTICLE_API_GATEWAY_URL= "https://svp6nct490.execute-api.us-east-1.amazonaws.com/prod/generate-article"
+GENERATE_IMAGE_API_GATEWAY_URL= "https://svp6nct490.execute-api.us-east-1.amazonaws.com/prod/generate-image"
+QUERY_IMAGES_API_GATEWAY_URL="https://svp6nct490.execute-api.us-east-1.amazonaws.com/prod/list-images"
+BUCKET_NAME="cloudaistack-imagebucket97210811-uaztmy3s8fy6"
 
 
 
