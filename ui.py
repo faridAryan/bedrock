@@ -131,10 +131,10 @@ def generate_image():
     
     style_preset = st.selectbox(
         "Style Preset:",
-        ["NONE", "3d-model", "analog-film", "anime", "cinematic", "comic-book", 
+        [ "photographic","cinematic","3d-model", "analog-film", "anime",  "comic-book", 
          "digital-art", "enhance", "fantasy-art", "isometric", "line-art", 
          "low-poly", "modeling-compound", "neon-punk", "origami", 
-         "photographic", "pixel-art", "tile-texture"],
+          "pixel-art", "tile-texture"],
         help="Choose a style preset to influence the artistic style of the generated image. Options include 'photographic' for realistic images and 'cinematic' for more dramatic visuals."
     )
 
